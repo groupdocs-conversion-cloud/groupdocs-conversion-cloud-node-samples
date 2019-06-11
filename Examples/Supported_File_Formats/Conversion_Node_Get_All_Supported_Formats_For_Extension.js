@@ -1,9 +1,9 @@
 "use strict";
-class Conversion_Node_Get_All_Supported_Formats_For_Extension {
+class Conversion_Ruby_Get_All_Supported_Formats_For_Extension {
 	static Run() {
 		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.GetSupportedConversionTypesRequest("", myStorage, "xlsx");
-		conversionApi.getSupportedConversionTypes(request)
+		infoApi.getSupportedConversionTypes(request)
 			.then(function (response) {
 				console.log("Supported file-formats:");
 				response.forEach(function (format) {
@@ -15,4 +15,4 @@ class Conversion_Node_Get_All_Supported_Formats_For_Extension {
 			});
 	}
 }
-module.exports = Conversion_Node_Get_All_Supported_Formats_For_Extension;
+module.exports = Conversion_Ruby_Get_All_Supported_Formats_For_Extension;

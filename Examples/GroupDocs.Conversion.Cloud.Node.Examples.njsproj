@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Common_Utilities\Utils.js" />
+    <Compile Include="Document_Information\Conversion_Node_Get_Document_Information.js" />
     <Compile Include="Run_Examples.js" />
     <Compile Include="Supported_File_Formats\Conversion_Node_Get_All_Supported_Formats.js" />
     <Compile Include="Supported_File_Formats\Conversion_Node_Get_All_Supported_Formats_For_Document.js" />
@@ -70,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common_Utilities\" />
+    <Folder Include="Document_Information\" />
     <Folder Include="Supported_File_Formats\" />
     <Folder Include="Working_With_Conversions\" />
     <Folder Include="Working_With_Files\" />

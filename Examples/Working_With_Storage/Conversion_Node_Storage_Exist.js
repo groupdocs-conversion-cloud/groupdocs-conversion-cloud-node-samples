@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Storage_Exist {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.StorageExistsRequest(myStorage);
 		storageApi.storageExists(request)
 			.then(function (response) {

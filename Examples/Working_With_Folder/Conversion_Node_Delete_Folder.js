@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Delete_Folder {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.DeleteFolderRequest("conversions/conversions1", myStorage, true);
 		folderApi.deleteFolder(request)
 			.then(function () {

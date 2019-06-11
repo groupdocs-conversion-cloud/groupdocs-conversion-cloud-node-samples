@@ -3,7 +3,7 @@ class Conversion_Node_Get_All_Supported_Formats {
 	static Run() {
 		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.GetSupportedConversionTypesRequest();
-		conversionApi.getSupportedConversionTypes(request)
+		infoApi.getSupportedConversionTypes(request)
 			.then(function (response) {
 				console.log("Supported file-formats:");
 				response.forEach(function (format) {
