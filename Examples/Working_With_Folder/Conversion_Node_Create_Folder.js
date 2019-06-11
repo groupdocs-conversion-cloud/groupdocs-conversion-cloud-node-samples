@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Create_Folder {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.CreateFolderRequest("conversions", myStorage);
 		folderApi.createFolder(request)
 			.then(function () {

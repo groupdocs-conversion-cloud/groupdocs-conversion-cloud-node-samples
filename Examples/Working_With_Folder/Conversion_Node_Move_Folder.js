@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Move_Folder {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.MoveFolderRequest("conversions1", "conversions/conversions1", myStorage, myStorage);
 		folderApi.moveFolder(request)
 			.then(function () {

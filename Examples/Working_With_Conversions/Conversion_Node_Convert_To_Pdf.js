@@ -39,7 +39,7 @@ class Conversion_Node_Convert_To_Pdf {
 		settings.outputPath = "converted/topdf";
 
 		var request = new groupdocs_conversion_cloud_1.ConvertDocumentRequest(settings);
-		conversionApi.convertDocument(request)
+		convertApi.convertDocument(request)
 			.then(function (response) {
 				console.log("Document converted successfully: " + response[0].url);
 			})

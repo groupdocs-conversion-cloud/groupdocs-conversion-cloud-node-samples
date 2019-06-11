@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Get_Disc_Usage {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.GetDiscUsageRequest(myStorage);
 		storageApi.getDiscUsage(request)
 			.then(function (response) {

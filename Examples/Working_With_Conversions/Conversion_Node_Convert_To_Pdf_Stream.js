@@ -39,7 +39,7 @@ class Conversion_Node_Convert_To_Pdf_Stream {
 		settings.outputPath = null; // set OutputPath as null will result the output as document IOStream
 
 		var request = new groupdocs_conversion_cloud_1.ConvertDocumentRequest(settings);
-		conversionApi.convertDocumentDownload(request)
+		convertApi.convertDocumentDownload(request)
 			.then(function (response) {
 				console.log("Document converted successfully: " + response.length);
 			})

@@ -1,7 +1,7 @@
 "use strict";
 class Conversion_Node_Object_Exists {
 	static Run() {
-		
+		// retrieve supported file-formats
 		var request = new groupdocs_conversion_cloud_1.ObjectExistsRequest("conversions/one-page.docx", myStorage);
 		storageApi.objectExists(request)
 			.then(function (response) {
