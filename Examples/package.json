@@ -1,12 +1,15 @@
 {
-	"name": "group-docs.conversion.cloud.node.examples",
-	"version": "0.0.0",
-	"description": "GroupDocs.Conversion.Cloud.Node.Examples",
-	"main": "app.js",
-	"author": {
-		"name": ""
-	},
-	"dependencies": {
-		"groupdocs-conversion-cloud": "^19.4.0"
-	}
+  "name": "group-docs.conversion.cloud.node.examples",
+  "version": "1.0.0",
+  "description": "GroupDocs.Conversion.Cloud.Node.Examples",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "groupdocs-conversion-cloud": "^20.2.0"
+  },
+  "scripts": {
+    "start": "node RunExamples.js"
+  }
 }
