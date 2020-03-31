@@ -10,6 +10,7 @@ class ConvertToHtml {
 		convertOptions.fromPage = 1;
 		convertOptions.pagesCount = 1;
 		convertOptions.fixedLayout = true;
+		convertOptions.fixedLayoutShowBorders = true;
 
 		settings.convertOptions = convertOptions
 		settings.outputPath = "converted";

@@ -57,6 +57,9 @@ async function examples() {
     await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAlteringFieldsVisibility').Run();
     await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAttachments').Run();
     await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithTimezoneOffset').Run();
+    await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithFieldLabels').Run();
+    await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithOriginalDate').Run();
+    await require('./LoadOptionsByDocumentType/Html/ConvertHtmlWithPageNumbering').Run();
     await require('./LoadOptionsByDocumentType/Note/ConvertNoteBySpecifyingFontSubstitution').Run();
     await require('./LoadOptionsByDocumentType/Pdf/ConvertPdfAndFlattenAllFields').Run();
     await require('./LoadOptionsByDocumentType/Pdf/ConvertPdfAndHideAnnotations').Run();
