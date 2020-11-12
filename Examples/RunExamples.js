@@ -14,17 +14,20 @@ global.serializer_1 = require("groupdocs-conversion-cloud/lib/serializer");
 
 global.myStorage = "First Storage";
 
+const config = new conversion_cloud.Configuration(appSid, appKey);
+config.apiBaseUrl = "https://api.groupdocs.cloud";
+
 // construct ConvertApi
-global.convertApi = conversion_cloud.ConvertApi.fromKeys(appSid, appKey);
+global.convertApi = conversion_cloud.ConvertApi.fromConfig(config);
 
 // construct InfoApi
-global.infoApi = conversion_cloud.InfoApi.fromKeys(appSid, appKey);
+global.infoApi = conversion_cloud.InfoApi.fromConfig(config);
 
 // construct FileApi
-global.fileApi = conversion_cloud.FileApi.fromKeys(appSid, appKey);
+global.fileApi = conversion_cloud.FileApi.fromConfig(config);
 
 // construct StorageApi
-global.storageApi = conversion_cloud.StorageApi.fromKeys(appSid, appKey);
+global.storageApi = conversion_cloud.StorageApi.fromConfig(config);
 
 async function examples() {
 
@@ -43,6 +46,7 @@ async function examples() {
     await require('./Convert/ConverToPdfResponseBody').Run();
     await require('./Convert/ConvertToPresentation').Run();
     await require('./Convert/ConvertToSpreadsheet').Run();
+    await require('./Convert/ConverToPdfDirect').Run();
 
     // Document conversion examples with common options
     await require('./Common/AddWatermark').Run();
