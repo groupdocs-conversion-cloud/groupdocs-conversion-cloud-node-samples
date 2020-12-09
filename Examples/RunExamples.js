@@ -7,14 +7,14 @@ global.serializer_1 = require("groupdocs-conversion-cloud/lib/serializer");
 ////          GroupDocs.Conversion Cloud API Examples
 //// ***********************************************************
 
-//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
+//TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
 
- global.appSid = "XXXX-XXXX-XXXX-XXXX";
- global.appKey = "XXXXXXXXXXXXXXXX";
+ global.clientId = "XXXX-XXXX-XXXX-XXXX";
+ global.clientSecret = "XXXXXXXXXXXXXXXX";
 
 global.myStorage = "First Storage";
 
-const config = new conversion_cloud.Configuration(appSid, appKey);
+const config = new conversion_cloud.Configuration(clientId, clientSecret);
 config.apiBaseUrl = "https://api.groupdocs.cloud";
 
 // construct ConvertApi
