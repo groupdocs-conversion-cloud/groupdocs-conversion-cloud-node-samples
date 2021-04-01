@@ -52,6 +52,7 @@ async function examples() {
     await require('./Common/AddWatermark').Run();
     await require('./Common/ConvertConsecutivePages').Run();
     await require('./Common/ConvertSpecificPages').Run();
+    await require('./Common/ConvertUsingCustomFont').Run();
 
     // Document conversion examples with loading options
     await require('./LoadOptionsByDocumentType/Cad/ConvertCadAndSpecifyLoadOptions').Run();

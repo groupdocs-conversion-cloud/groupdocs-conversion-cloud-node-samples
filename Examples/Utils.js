@@ -24,6 +24,8 @@ class Utils {
 		await this.UploadTestFile("Pdf/sample.pdf");
 		await this.UploadTestFile("Presentation/with_hidden_page.pptx");
 		await this.UploadTestFile("Presentation/with_notes.pptx");
+		await this.UploadTestFile("Presentation/uses-custom-font.pptx");
+		await this.UploadTestFile("font/ttf/foo.ttf");
 		await this.UploadTestFile("Spreadsheet/sample.csv");
 		await this.UploadTestFile("Spreadsheet/sample.xlsx");
 		await this.UploadTestFile("Spreadsheet/with_hidden_sheet.xlsx");
