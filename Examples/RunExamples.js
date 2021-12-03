@@ -29,6 +29,8 @@ global.fileApi = conversion_cloud.FileApi.fromConfig(config);
 // construct StorageApi
 global.storageApi = conversion_cloud.StorageApi.fromConfig(config);
 
+global.licenseApi = conversion_cloud.LicenseApi.fromConfig(config);
+
 async function examples() {
 
     try {        
@@ -39,9 +41,12 @@ async function examples() {
         await require('./Info/GetSupportedConversions').Run();    
         await require('./Info/GetDocumentInfo').Run();
 
+        // License API Examples
+        await require('./Info/GetLicenseConsumption').Run();   
+
         // Document conversion examples with conversion options
-        await require('./Convert/ConvertToHtml').Run();
-        await require('./Convert/ConvertToImage').Run();
+        // await require('./Convert/ConvertToHtml').Run();
+        // await require('./Convert/ConvertToImage').Run();
         await require('./Convert/ConvertToWordProcessing').Run();
         await require('./Convert/ConvertToPdf').Run();
         await require('./Convert/ConverToPdfResponseBody').Run();
@@ -61,7 +66,7 @@ async function examples() {
         await require('./LoadOptionsByDocumentType/Csv/ConvertCsvBySpecifyingDelimiter').Run();
         await require('./LoadOptionsByDocumentType/Csv/ConvertCsvBySpecifyingEncoding').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAlteringFieldsVisibility').Run();
-        await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAttachments').Run();
+        //await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAttachments').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithTimezoneOffset').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithFieldLabels').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithOriginalDate').Run();
