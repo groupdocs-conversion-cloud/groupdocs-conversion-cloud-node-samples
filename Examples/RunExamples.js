@@ -45,14 +45,15 @@ async function examples() {
         await require('./Info/GetLicenseConsumption').Run();   
 
         // Document conversion examples with conversion options
-        // await require('./Convert/ConvertToHtml').Run();
-        // await require('./Convert/ConvertToImage').Run();
+        await require('./Convert/ConvertToHtml').Run();
+        await require('./Convert/ConvertToImage').Run();
         await require('./Convert/ConvertToWordProcessing').Run();
         await require('./Convert/ConvertToPdf').Run();
         await require('./Convert/ConverToPdfResponseBody').Run();
         await require('./Convert/ConvertToPresentation').Run();
         await require('./Convert/ConvertToSpreadsheet').Run();
         await require('./Convert/ConverToPdfDirect').Run();
+        await require('./Convert/ConverToPdfDirectOptions').Run();
 
         // Document conversion examples with common options
         await require('./Common/AddWatermark').Run();
@@ -66,7 +67,6 @@ async function examples() {
         await require('./LoadOptionsByDocumentType/Csv/ConvertCsvBySpecifyingDelimiter').Run();
         await require('./LoadOptionsByDocumentType/Csv/ConvertCsvBySpecifyingEncoding').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAlteringFieldsVisibility').Run();
-        //await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithAttachments').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithTimezoneOffset').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithFieldLabels').Run();
         await require('./LoadOptionsByDocumentType/Email/ConvertEmailWithOriginalDate').Run();
