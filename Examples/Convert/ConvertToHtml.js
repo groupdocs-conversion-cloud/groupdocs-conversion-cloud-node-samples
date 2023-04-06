@@ -6,7 +6,7 @@ class ConvertToHtml {
 		settings.filePath = "WordProcessing/four-pages.docx";
 		settings.format = "html";
 
-		let convertOptions = new conversion_cloud.HtmlConvertOptions();
+		let convertOptions = new conversion_cloud.WebConvertOptions();
 		convertOptions.fromPage = 1;
 		convertOptions.pagesCount = 1;
 		convertOptions.fixedLayout = true;

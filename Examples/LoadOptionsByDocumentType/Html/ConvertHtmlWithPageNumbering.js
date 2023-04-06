@@ -6,7 +6,7 @@ class ConvertHtmlWithPageNumbering {
 		settings.filePath = "Html/sample.html";
 		settings.format = "pdf";
 
-		let loadOptions = new conversion_cloud.HtmlLoadOptions();
+		let loadOptions = new conversion_cloud.WebLoadOptions();
 		loadOptions.pageNumbering = true;
 
 		settings.loadOptions = loadOptions;
