@@ -7,7 +7,7 @@
     "name": ""
   },
   "dependencies": {
-    "groupdocs-conversion-cloud": "^23.6"
+    "groupdocs-conversion-cloud": "^23.7"
   },
   "scripts": {
     "start": "node test.js"
