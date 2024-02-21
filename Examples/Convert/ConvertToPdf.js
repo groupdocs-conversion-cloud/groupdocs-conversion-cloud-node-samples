@@ -15,7 +15,7 @@ class ConvertToPdf {
 		convertOptions.centerWindow = true;
 		convertOptions.compressImages = false;
 		convertOptions.displayDocTitle = true;
-		convertOptions.dpi = 1024.0;
+		convertOptions.dpi = 1024;
 		convertOptions.expandedOutlineLevels = 1;
 		convertOptions.fitWindow = false;
 		convertOptions.fromPage = 1;
