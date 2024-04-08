@@ -7,8 +7,7 @@ class ConvertCadAndSpecifyLoadOptions {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.CadLoadOptions();
-		loadOptions.width = 1920;
-		loadOptions.height = 1080;
+		loadOptions.format = "dwg";
 
 		settings.loadOptions = loadOptions;
 		settings.outputPath = "converted";
