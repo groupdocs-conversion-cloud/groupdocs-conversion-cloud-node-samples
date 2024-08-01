@@ -1,5 +1,5 @@
 "use strict";
-class ConverToPdfDirect {
+class ConvertToPdfDirect {
 	static async Run() {
 		
 		let file = fs.readFileSync('./Resources/WordProcessing/four-pages.docx');
@@ -11,4 +11,4 @@ class ConverToPdfDirect {
 		console.log("Document converted: " + result.length);
 	}
 }
-module.exports = ConverToPdfDirect;
+module.exports = ConvertToPdfDirect;

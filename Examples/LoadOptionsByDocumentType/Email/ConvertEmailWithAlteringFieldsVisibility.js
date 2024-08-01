@@ -10,7 +10,6 @@ class ConvertEmailWithAlteringFieldsVisibility {
 		loadOptions.displayHeader = false;
 		loadOptions.displayFromEmailAddress = false;
 		loadOptions.displayToEmailAddress = false;
-		loadOptions.displayEmailAddress = false;
 		loadOptions.displayCcEmailAddress = false;
 		loadOptions.displayBccEmailAddress = false;
 

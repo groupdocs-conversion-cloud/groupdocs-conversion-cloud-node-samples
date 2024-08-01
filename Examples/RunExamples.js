@@ -9,8 +9,8 @@ global.serializer_1 = require("groupdocs-conversion-cloud/lib/serializer");
 
 //TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required).
 
- global.clientId = "XXXX-XXXX-XXXX-XXXX";
- global.clientSecret = "XXXXXXXXXXXXXXXX";
+global.clientId = "XXXX-XXXX-XXXX-XXXX";
+global.clientSecret = "XXXXXXXXXXXXXXXX";
 
 global.myStorage = "First Storage";
 
@@ -29,7 +29,12 @@ global.fileApi = conversion_cloud.FileApi.fromConfig(config);
 // construct StorageApi
 global.storageApi = conversion_cloud.StorageApi.fromConfig(config);
 
+// construct LicenseApi
 global.licenseApi = conversion_cloud.LicenseApi.fromConfig(config);
+
+// construct AsyncApi
+global.asyncApi = conversion_cloud.AsyncApi.fromConfig(config);
+
 
 async function examples() {
 
@@ -49,11 +54,11 @@ async function examples() {
         await require('./Convert/ConvertToImage').Run();
         await require('./Convert/ConvertToWordProcessing').Run();
         await require('./Convert/ConvertToPdf').Run();
-        await require('./Convert/ConverToPdfResponseBody').Run();
+        await require('./Convert/ConvertToPdfResponseBody').Run();
         await require('./Convert/ConvertToPresentation').Run();
         await require('./Convert/ConvertToSpreadsheet').Run();
-        await require('./Convert/ConverToPdfDirect').Run();
-        await require('./Convert/ConverToPdfDirectOptions').Run();
+        await require('./Convert/ConvertToPdfDirect').Run();
+        await require('./Convert/ConvertToPdfDirectOptions').Run();
 
         // Document conversion examples with common options
         await require('./Common/AddWatermark').Run();
@@ -90,6 +95,10 @@ async function examples() {
         await require('./LoadOptionsByDocumentType/WordProcessing/ConvertWordProcessingByHidingComments').Run();
         await require('./LoadOptionsByDocumentType/WordProcessing/ConvertWordProcessingByHidingTrackedChanges').Run();
         await require('./LoadOptionsByDocumentType/WordProcessing/ConvertWordProcessingBySpecifyingFontSubstitution').Run();
+
+        // Async API Examples
+        await require('./Convert/Async/ConvertToPdfAsync').Run();
+        await require('./Convert/Async/ConvertToPdfDirectAsync').Run();
     } catch (error) {
         console.log(error);  
     }

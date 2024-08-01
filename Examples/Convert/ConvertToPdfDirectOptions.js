@@ -1,5 +1,5 @@
 "use strict";
-class ConverToPdfDirectOptions {
+class ConvertToPdfDirectOptions {
 	static async Run() {
 		
 		let file = fs.readFileSync('./Resources/WordProcessing/password-protected.docx');
@@ -13,4 +13,4 @@ class ConverToPdfDirectOptions {
 		console.log("Document converted: " + result.length);
 	}
 }
-module.exports = ConverToPdfDirectOptions;
+module.exports = ConvertToPdfDirectOptions;
