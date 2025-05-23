@@ -7,7 +7,7 @@ class ConvertPresentationByHidingComments {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.PresentationLoadOptions();
-		loadOptions.hideComments = true;		
+		loadOptions.commentsPosition = conversion_cloud.PresentationLoadOptions.CommentsPositionEnum.None;
 
 		settings.loadOptions = loadOptions;
 		settings.outputPath = "converted";

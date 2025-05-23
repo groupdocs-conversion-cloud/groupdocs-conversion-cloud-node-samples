@@ -7,7 +7,7 @@ class ConvertSpreadsheetAndHideComments {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.SpreadsheetLoadOptions();
-		loadOptions.hideComments = true;
+		loadOptions.printComments = conversion_cloud.SpreadsheetLoadOptions.PrintCommentsEnum.PrintNoComments;
 		loadOptions.onePagePerSheet = true;
 
 		settings.loadOptions = loadOptions;
