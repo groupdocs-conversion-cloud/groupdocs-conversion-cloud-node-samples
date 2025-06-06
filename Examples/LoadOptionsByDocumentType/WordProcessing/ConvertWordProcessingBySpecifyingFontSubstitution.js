@@ -7,7 +7,6 @@ class ConvertWordProcessingBySpecifyingFontSubstitution {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.WordProcessingLoadOptions();
-		loadOptions.autoFontSubstitution = false;
 		loadOptions.defaultFont = "Helvetica";		
 		loadOptions.fontSubstitutes = {};
 		loadOptions.fontSubstitutes["Tahoma"] = "Arial";

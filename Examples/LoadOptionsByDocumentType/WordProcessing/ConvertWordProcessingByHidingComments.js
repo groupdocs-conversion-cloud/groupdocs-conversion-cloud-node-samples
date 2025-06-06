@@ -7,7 +7,7 @@ class ConvertWordProcessingByHidingComments {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.WordProcessingLoadOptions();
-		loadOptions.hideComments = true;
+		loadOptions.commentDisplayMode = conversion_cloud.WordProcessingLoadOptions.CommentDisplayModeEnum.Hidden;
 
 		settings.loadOptions = loadOptions;
 		settings.outputPath = "converted";
