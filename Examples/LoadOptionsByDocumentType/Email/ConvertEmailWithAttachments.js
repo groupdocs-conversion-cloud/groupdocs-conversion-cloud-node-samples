@@ -7,7 +7,7 @@ class ConvertEmailWithAttachments {
 		settings.format = "pdf";
 
 		let loadOptions = new conversion_cloud.EmailLoadOptions();
-		loadOptions.convertAttachments = true;		
+		loadOptions.displayAttachments = true;		
 
 		settings.loadOptions = loadOptions;
 		settings.outputPath = "converted";
