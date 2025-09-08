@@ -3,7 +3,7 @@ class ConvertToPdfDirectOptions {
 	static async Run() {
 		
 		let file = fs.readFileSync('./Resources/WordProcessing/password-protected.docx');
-		let loadOptions = new conversion_cloud.DocxLoadOptions();
+		let loadOptions = new conversion_cloud.WordProcessingLoadOptions();
 		loadOptions.format = "docx";
 		loadOptions.password = "password";
 		let request = new conversion_cloud.ConvertDocumentDirectRequest("pdf", file, undefined, undefined, loadOptions);

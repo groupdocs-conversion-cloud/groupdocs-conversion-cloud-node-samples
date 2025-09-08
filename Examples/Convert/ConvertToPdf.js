@@ -6,7 +6,7 @@ class ConvertToPdf {
 		settings.filePath = "WordProcessing/password-protected.docx";
 		settings.format = "pdf";
 
-		let loadOptions = new conversion_cloud.DocxLoadOptions();
+		let loadOptions = new conversion_cloud.WordProcessingLoadOptions();
 		loadOptions.password = "password";
 
 		settings.loadOptions = loadOptions;
