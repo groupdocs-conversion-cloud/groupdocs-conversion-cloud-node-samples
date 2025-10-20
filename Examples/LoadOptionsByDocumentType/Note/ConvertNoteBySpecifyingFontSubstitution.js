@@ -6,7 +6,7 @@ class ConvertNoteBySpecifyingFontSubstitution {
 		settings.filePath = "Note/sample.one";
 		settings.format = "pdf";
 
-		let loadOptions = new conversion_cloud.OneLoadOptions();
+		let loadOptions = new conversion_cloud.NoteLoadOptions();
 		loadOptions.fontSubstitutes = {};
 		loadOptions.fontSubstitutes["Tahoma"] = "Arial";
 		loadOptions.fontSubstitutes["Times New Roman"] = "Arial";
