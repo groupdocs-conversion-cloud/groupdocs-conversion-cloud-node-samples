@@ -13,7 +13,7 @@ class ConvertToWordProcessing {
 		loadOptions.flattenAllFields = true;
 
 		settings.loadOptions = loadOptions;
-		settings.convertOptions = new conversion_cloud.DocxConvertOptions();
+		settings.convertOptions = new conversion_cloud.WordProcessingConvertOptions();
 		settings.outputPath = "converted";
 
 		let result = await convertApi.convertDocument(new conversion_cloud.ConvertDocumentRequest(settings));

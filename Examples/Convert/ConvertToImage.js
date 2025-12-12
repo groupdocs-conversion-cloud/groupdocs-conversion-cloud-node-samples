@@ -6,7 +6,7 @@ class ConvertToImage {
 		settings.filePath = "WordProcessing/four-pages.docx";
 		settings.format = "jpg";
 
-		let convertOptions = new conversion_cloud.JpgConvertOptions();
+		let convertOptions = new conversion_cloud.ImageConvertOptions();
 		convertOptions.fromPage = 1;
 		convertOptions.pagesCount = 2;		
 
